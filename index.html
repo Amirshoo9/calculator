@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calCulator</title>
+</head>
+
+<body style="text-align: center;">
+    <br>
+    <br>
+    <img src="cal.png" alt=" error ">
+    <br>
+    <br>
+    <span style="font-size: x-large;color: rgb(244, 20, 20);background-color: rgb(212, 212, 212);">calculator></span>
+    <br>
+    <br>
+    <input style="background-color: aquamarine;" id="x" type="number">
+    <input style="background-color: aquamarine;" id="y" type="number">
+    <span>=</span>
+    <span  id="j"> x </span>
+    <br>
+    <br>
+    <br>
+    <button style="color: rgb(28, 11, 184); background-color: coral;" onclick=" add () ">+</button>
+    <button style="background-color: coral;" onclick=" manfi ()">-</button>
+    <button style="background-color: coral;" onclick=" zarb () ">*</button>
+    <button style="background-color: coral;" onclick=" tagh () ">/</button>
+    <button style="background-color: coral;" onclick="tav () ">**</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <P>.</P>
+    <span style="font-size: xx-large; color: rgb(0, 76, 255); background-color: aliceblue;">calculator by amir S </span>
+
+    <script>
+        function add() {
+
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var j = Number(x) + Number(y);
+            document.getElementById("j").innerHTML = j;
+        }
+ 
+    
+        function manfi() {
+
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var j = Number(x) - Number(y);
+            document.getElementById("j").innerHTML = j;
+        } 
+
+        
+        function zarb() {
+
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var j = Number(x) * Number(y);
+            document.getElementById("j").innerHTML = j;
+        }
+
+
+        
+        function tagh() {
+
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var j = Number(x) / Number(y);
+            document.getElementById("j").innerHTML = j;
+        }
+
+        
+        function tav() {
+
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var j = Number(x) ** Number(y);
+            document.getElementById("j").innerHTML = j;
+        }
+
+         
+
+
+
+    </script>
+</body>
+
+</html>
